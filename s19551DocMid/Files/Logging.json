@@ -1,0 +1,1 @@
+﻿{"path":"/api/student","method":"GET","queryString":"?name=Garik","body":"{\n   \u0022IndexNumber\u0022: \u0022s12345\u0022,\n   \u0022Name\u0022: \u0022Jogn\u0022,\n  \u0022Surname\u0022: \u0022Doe\u0022,\n   \u0022BirthDate\u0022: \u00221993-03-03\u0022,\n  \u0022Study\u0022: \u0022IT\u0022\n}\n"}
