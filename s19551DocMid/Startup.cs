@@ -60,6 +60,7 @@ namespace s19551DocMid
                     return;
                 }
 
+
                 string index = context.Request.Headers["Index"].ToString();
 
                 var query = db.GetStudent(index);
