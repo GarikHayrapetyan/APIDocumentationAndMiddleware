@@ -19,9 +19,9 @@ namespace s19551DocMid.Services
             using (SqlConnection connection = new SqlConnection(Statics.StaticValues.CONNECTION_STRING))
             using (SqlCommand command=new SqlCommand())
             {
-                command.CommandText = "select IndexNumber,FirstName,LastName "+
-                                        "from student " +
-                                        "where IndexNumber=@index";
+                command.CommandText = @"select IndexNumber,FirstName,LastName
+                                        from student
+                                        where IndexNumber=@index";
                 command.Parameters.AddWithValue("index",index);
                 command.Connection = connection;
 
@@ -48,7 +48,7 @@ namespace s19551DocMid.Services
             using (SqlCommand command = new SqlCommand())
             {
                 command.Connection = connection;
-                command.CommandText = "select IndexNumber, FirstName, LastName from student";
+                command.CommandText = @"select IndexNumber, FirstName, LastName from student";
                
 
                 connection.Open();

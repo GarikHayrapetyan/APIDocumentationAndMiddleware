@@ -20,7 +20,7 @@ namespace s19551DocMid.Controllers
             if (result.Count() > 0)
                 return Ok(result);
 
-            return NotFound("Empty!!!");
+            return NotFound("Database is empty!!!");
         }
 
         [HttpGet("{index}")]
